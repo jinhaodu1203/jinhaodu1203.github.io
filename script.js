@@ -1,14 +1,14 @@
-// ================================
-// YEAR
-// ================================
+// ========================================
+// CURRENT YEAR
+// ========================================
 
 document.getElementById("year").textContent =
     new Date().getFullYear();
 
 
-// ================================
+// ========================================
 // MOBILE MENU
-// ================================
+// ========================================
 
 const menuButton =
     document.getElementById("menuButton");
@@ -43,9 +43,9 @@ document
     });
 
 
-// ================================
+// ========================================
 // SCROLL REVEAL
-// ================================
+// ========================================
 
 const revealElements =
     document.querySelectorAll(".reveal");
@@ -66,7 +66,9 @@ const revealObserver =
                             .add("visible");
 
                         revealObserver
-                            .unobserve(entry.target);
+                            .unobserve(
+                                entry.target
+                            );
 
                     }
 
@@ -99,9 +101,9 @@ revealElements.forEach(
 );
 
 
-// ================================
-// SCROLL PROGRESS
-// ================================
+// ========================================
+// SCROLL PROGRESS BAR
+// ========================================
 
 const scrollBar =
     document.getElementById("scrollBar");
@@ -118,10 +120,12 @@ window.addEventListener(
             document.documentElement.scrollHeight
             - window.innerHeight;
 
+
         const progress =
             documentHeight > 0
                 ? (scrollTop / documentHeight) * 100
                 : 0;
+
 
         scrollBar.style.width =
             progress + "%";
@@ -130,9 +134,9 @@ window.addEventListener(
 );
 
 
-// ================================
-// ACTIVE NAV
-// ================================
+// ========================================
+// ACTIVE NAVIGATION
+// ========================================
 
 const sections =
     document.querySelectorAll(
