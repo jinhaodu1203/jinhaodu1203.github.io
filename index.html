@@ -3,43 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="David Jinhao Du - Applied Mathematics and Data Science student at Northeastern University.">
+          content="David Jinhao Du - Mathematics and Data Science student at Northeastern University.">
 
     <title>David Jinhao Du | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
-
-<!-- ================= NAVIGATION ================= -->
-
-<header>
+<header class="header">
 
     <nav class="navbar">
 
-        <a href="#home" class="logo">
-            DJH
-        </a>
+        <a href="#home" class="logo">DJH</a>
 
-        <div class="nav-links">
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
 
             <a href="#about">About</a>
-
+            <a href="#education">Education</a>
             <a href="#experience">Experience</a>
-
             <a href="#projects">Projects</a>
-
             <a href="#skills">Skills</a>
 
-            <a href="#contact">Contact</a>
+            <a href="resume.pdf"
+               class="nav-resume"
+               target="_blank">
+                Resume
+            </a>
 
         </div>
 
@@ -48,53 +46,74 @@
 </header>
 
 
-<!-- ================= HOME ================= -->
+<main>
+
+
+<!-- HERO -->
 
 <section id="home" class="hero">
 
-    <div class="hero-left">
+    <div class="hero-content reveal">
 
-        <p class="small-title">
-            APPLIED MATHEMATICS + DATA SCIENCE
-        </p>
-
+        <div class="hero-badge">
+            Mathematics + Data Science
+        </div>
 
         <h1>
-
             Hi, I'm
-
-            <span>
-                David Jinhao Du.
-            </span>
-
+            <span>David Jinhao Du.</span>
         </h1>
-
 
         <p class="hero-description">
 
-            Applied Mathematics and Data Science student at
-            Northeastern University building projects in
-            software engineering, data science, and AI.
-
-            I enjoy turning ideas and data into practical software.
+            Mathematics and Data Science student at
+            Northeastern University interested in
+            software engineering, data science, AI,
+            and intelligent systems.
 
         </p>
-
 
         <div class="hero-buttons">
 
             <a href="#projects"
                class="button primary-button">
 
-                View Projects
+                View My Work
 
             </a>
 
-
-            <a href="#contact"
+            <a href="resume.pdf"
+               target="_blank"
                class="button secondary-button">
 
-                Contact Me
+                View Resume
+
+            </a>
+
+        </div>
+
+
+        <div class="social-row">
+
+            <a href="https://github.com/jinhaodu1203"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                GitHub ↗
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/jinhao-du-219762352"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                LinkedIn ↗
+
+            </a>
+
+            <a href="mailto:du.jinh@northeastern.edu">
+
+                Email ↗
 
             </a>
 
@@ -103,166 +122,161 @@
     </div>
 
 
-    <div class="hero-card">
+    <div class="hero-card reveal">
 
-        <p class="card-label">
-            Currently Building
+        <p class="small-label">
+            CURRENT FOCUS
         </p>
-
 
         <h2>
-            Software + Data Projects
+            Building software with data.
         </h2>
 
+        <div class="hero-stat">
 
-        <div class="card-line"></div>
+            <span>Programming</span>
 
+            <strong>
+                Python · C++ · SQL
+            </strong>
 
-        <p class="card-label">
-            Languages
-        </p>
+        </div>
 
+        <div class="hero-stat">
 
-        <strong>
-            Python · C++ · SQL
-        </strong>
+            <span>Data</span>
 
+            <strong>
+                Pandas · NumPy · MySQL
+            </strong>
 
-        <div class="card-line"></div>
+        </div>
 
+        <div class="hero-stat">
 
-        <p class="card-label">
-            Interests
-        </p>
+            <span>Tools</span>
 
+            <strong>
+                Git · GitHub · PyCharm
+            </strong>
 
-        <strong>
-            AI · Data · Software
-        </strong>
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 
-<section id="about"
-         class="section">
+<section id="about" class="section reveal">
 
     <p class="section-label">
         ABOUT
     </p>
 
-
     <h2 class="section-heading">
-        Building technical skills through real projects.
-    </h2>
 
+        I like learning by building.
+
+    </h2>
 
     <p class="section-description">
 
-        I am an Applied Mathematics and Data Science student
-        at Northeastern University.
+        My work sits between mathematics, programming,
+        and data.
 
-        My interests include software engineering,
-        data analysis, machine learning, databases,
-        artificial intelligence, and intelligent systems.
-
-        I enjoy learning new technologies by using them
-        to build practical projects.
+        I enjoy turning ideas into practical projects,
+        learning new technologies through implementation,
+        and using quantitative thinking to solve problems.
 
     </p>
 
 </section>
 
 
-<!-- ================= EXPERIENCE ================= -->
+<!-- EDUCATION -->
 
-<section id="experience"
+<section id="education"
          class="section section-background">
 
-    <p class="section-label">
-        EXPERIENCE
-    </p>
+    <div class="reveal">
+
+        <p class="section-label">
+            EDUCATION
+        </p>
+
+        <h2 class="section-heading">
+            Northeastern University
+        </h2>
 
 
-    <h2 class="section-heading">
-        Work Experience
-    </h2>
-
-
-    <div class="experience-container">
-
-
-        <!-- CRIC 2026 -->
-
-        <div class="experience-card">
+        <div class="education-card">
 
             <div>
 
                 <h3>
-                    CRIC
+                    Bachelor of Science
                 </h3>
 
-
                 <h4>
-                    Real Estate Market Research & AI Applications Intern
+                    Mathematics and Data Science
                 </h4>
 
-
-                <p class="experience-date">
-                    Wuxi, China · Jun 2026 - Aug 2026
+                <p>
+                    Boston, Massachusetts
                 </p>
 
             </div>
 
 
-            <p>
+            <div class="education-details">
 
-                Conducted on-site research across residential developments,
-                collecting pricing, sell-through, product positioning,
-                channel, and marketing data.
+                <p>
+                    <span>Expected Graduation</span>
+                    <strong>May 2028</strong>
+                </p>
 
-                Maintained project datasets and market-tracking tables,
-                compared competitors, and applied enterprise AI tools
-                to support research and reporting workflows.
+                <p>
+                    <span>GPA</span>
+                    <strong>3.79 / 4.0</strong>
+                </p>
 
-            </p>
+                <p>
+                    <span>Recognition</span>
+                    <strong>Dean's List · Fall 2025</strong>
+                </p>
+
+            </div>
 
         </div>
 
 
-        <!-- CRIC 2025 -->
+        <div class="coursework">
 
-        <div class="experience-card">
+            <span>
+                Foundations of Data Science
+            </span>
 
-            <div>
+            <span>
+                Advanced Programming for Data Science
+            </span>
 
-                <h3>
-                    CRIC
-                </h3>
+            <span>
+                Database Design
+            </span>
 
+            <span>
+                Data Structures & Algorithms
+            </span>
 
-                <h4>
-                    Real Estate Market Research Intern
-                </h4>
+            <span>
+                Linear Algebra
+            </span>
 
-
-                <p class="experience-date">
-                    Wuxi, China · May 2025 - Aug 2025
-                </p>
-
-            </div>
-
-
-            <p>
-
-                Supported residential-market research by collecting
-                and organizing project information for database updates,
-                project comparisons, and internal research materials.
-
-            </p>
+            <span>
+                Probability & Statistics
+            </span>
 
         </div>
 
@@ -271,63 +285,201 @@
 </section>
 
 
-<!-- ================= PROJECTS ================= -->
+<!-- EXPERIENCE -->
 
-<section id="projects"
+<section id="experience"
          class="section">
 
-    <p class="section-label">
-        PROJECTS
-    </p>
+    <div class="reveal">
+
+        <p class="section-label">
+            EXPERIENCE
+        </p>
+
+        <h2 class="section-heading">
+            Professional Experience
+        </h2>
+
+    </div>
 
 
-    <h2 class="section-heading">
-        Selected Projects
-    </h2>
+    <div class="experience-list">
 
 
-    <div class="projects-grid">
+        <article class="experience-card reveal">
 
+            <div class="experience-title">
 
-        <!-- HOOP HAVOC -->
+                <h3>
+                    Shanghai CRIC Information Technology Co., Ltd.
+                </h3>
 
-        <div class="project-card">
+                <h4>
+                    Real Estate Market Research & AI Applications Intern
+                </h4>
 
-            <div class="project-top">
+                <p>
+                    Wuxi, China
+                </p>
 
                 <span>
-                    Python · Pygame · Git
-                </span>
-
-                <span>
-                    01
+                    Jun 2026 – Aug 2026
                 </span>
 
             </div>
 
 
+            <div class="experience-content">
+
+                <p>
+
+                    Conducted on-site research across residential
+                    developments and collected pricing,
+                    sell-through, product-positioning,
+                    channel, and marketing data.
+
+                </p>
+
+                <p>
+
+                    Maintained project datasets and market-tracking
+                    tables while comparing competitors and identifying
+                    pricing and absorption trends.
+
+                </p>
+
+                <p>
+
+                    Applied enterprise AI tools to organize research,
+                    draft content, and improve recurring reporting
+                    workflows.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience-card reveal">
+
+            <div class="experience-title">
+
+                <h3>
+                    Shanghai CRIC Information Technology Co., Ltd.
+                </h3>
+
+                <h4>
+                    Real Estate Market Research Intern
+                </h4>
+
+                <p>
+                    Wuxi, China
+                </p>
+
+                <span>
+                    May 2025 – Aug 2025
+                </span>
+
+            </div>
+
+
+            <div class="experience-content">
+
+                <p>
+
+                    Supported residential-market research
+                    by collecting and organizing project information.
+
+                </p>
+
+                <p>
+
+                    Contributed to database updates,
+                    project comparisons, and internal
+                    market research materials.
+
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects"
+         class="section section-background">
+
+    <div class="reveal">
+
+        <p class="section-label">
+            PROJECTS
+        </p>
+
+        <h2 class="section-heading">
+            Selected Work
+        </h2>
+
+    </div>
+
+
+    <!-- FEATURED PROJECT -->
+
+    <article class="featured-project reveal">
+
+        <div class="featured-number">
+            01
+        </div>
+
+        <div class="featured-content">
+
+            <p class="project-label">
+                FEATURED PROJECT
+            </p>
+
             <h3>
                 HOOP HAVOC
             </h3>
 
+            <div class="tech-tags">
+
+                <span>Python</span>
+                <span>Pygame</span>
+                <span>Git</span>
+                <span>GitHub</span>
+
+            </div>
 
             <p>
 
-                Developed a two-player basketball game using
-                Python and Pygame with character selection,
+                A two-player basketball game built with Python
+                and Pygame featuring character selection,
                 AI opponents, collision and ball-physics systems,
                 scoring, and training modes.
 
-                Managed version control and releases using Git and GitHub.
+            </p>
+
+            <p>
+
+                Used Git and GitHub for version control and releases,
+                and packaged the Windows build for distribution.
 
             </p>
 
 
-            <div class="project-links">
+            <div class="project-actions">
 
-                <a href="https://github.com/jinhaodu1203/basketball-brawl">
+                <a href="https://github.com/jinhaodu1203/hoop-havoc"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="button primary-button">
 
-                    View GitHub →
+                    View GitHub ↗
 
                 </a>
 
@@ -335,33 +487,45 @@
 
         </div>
 
+    </article>
 
-        <!-- DATA SCIENCE -->
 
-        <div class="project-card">
+    <div class="projects-grid">
 
-            <div class="project-top">
 
-                <span>
-                    Python · Data Science
-                </span>
+        <!-- DATA PROJECT -->
 
-                <span>
-                    02
-                </span>
+        <article class="project-card reveal">
 
+            <div class="project-number">
+                02
             </div>
 
+            <p class="project-label">
+                DATA SCIENCE
+            </p>
 
             <h3>
                 Sleep & Stress Data Analysis
             </h3>
 
+            <div class="tech-tags">
+
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Machine Learning</span>
+
+            </div>
 
             <p>
 
                 Collaborated on a four-person team analyzing
-                relationships among sleep, stress, and behavioral variables.
+                relationships between sleep, stress,
+                and behavioral variables.
+
+            </p>
+
+            <p>
 
                 Applied exploratory data analysis,
                 linear regression, logistic regression,
@@ -369,115 +533,108 @@
 
             </p>
 
+        </article>
 
-            <div class="project-status">
-                Northeastern University · Spring 2026
+
+        <!-- DATABASE -->
+
+        <article class="project-card reveal">
+
+            <div class="project-number">
+                03
             </div>
 
-        </div>
+            <p class="project-label">
+                DATABASE
+            </p>
+
+            <h3>
+                Database Development
+            </h3>
+
+            <div class="tech-tags">
+
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>Relational Design</span>
+
+            </div>
+
+            <p>
+
+                Developing relational database skills
+                through schema design, SQL queries,
+                data organization, and MySQL.
+
+            </p>
+
+        </article>
 
 
         <!-- C++ -->
 
-        <div class="project-card">
+        <article class="project-card reveal">
 
-            <div class="project-top">
-
-                <span>
-                    C++
-                </span>
-
-                <span>
-                    03
-                </span>
-
+            <div class="project-number">
+                04
             </div>
 
+            <p class="project-label">
+                SOFTWARE
+            </p>
 
             <h3>
                 C++ Programming
             </h3>
 
+            <div class="tech-tags">
+
+                <span>C++</span>
+                <span>Git</span>
+                <span>Problem Solving</span>
+
+            </div>
 
             <p>
 
-                Developing C++ programming skills through coursework
-                involving control flow, functions, file input and output,
-                data processing, debugging, and software development
-                fundamentals.
+                Building C++ programming experience through
+                software development exercises involving
+                control flow, functions, debugging,
+                and program design.
 
             </p>
 
-
-            <div class="project-status">
-                Coursework in Progress
-            </div>
-
-        </div>
-
-
-        <!-- DATABASE -->
-
-        <div class="project-card">
-
-            <div class="project-top">
-
-                <span>
-                    SQL · MySQL
-                </span>
-
-                <span>
-                    04
-                </span>
-
-            </div>
-
-
-            <h3>
-                Database Projects
-            </h3>
-
-
-            <p>
-
-                Working with relational databases,
-                schema design, SQL queries,
-                data organization, and MySQL
-                through database design coursework.
-
-            </p>
-
-
-            <div class="project-status">
-                Coursework in Progress
-            </div>
-
-        </div>
+        </article>
 
     </div>
 
 </section>
 
 
-<!-- ================= SKILLS ================= -->
+<!-- SKILLS -->
 
 <section id="skills"
-         class="section section-background">
+         class="section">
 
-    <p class="section-label">
-        SKILLS
-    </p>
+    <div class="reveal">
 
+        <p class="section-label">
+            SKILLS
+        </p>
 
-    <h2 class="section-heading">
-        Technical Skills
-    </h2>
+        <h2 class="section-heading">
+            Technical Toolkit
+        </h2>
+
+    </div>
 
 
     <div class="skills-grid">
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
+
+            <p class="skill-number">01</p>
 
             <h3>
                 Programming
@@ -490,45 +647,46 @@
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
+
+            <p class="skill-number">02</p>
 
             <h3>
                 Data Science
             </h3>
 
             <p>
-                Pandas · NumPy · Data Cleaning ·
-                EDA · Linear Regression ·
-                Logistic Regression · K-Means Clustering
+                Pandas · NumPy · EDA · Regression · Clustering
             </p>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
+
+            <p class="skill-number">03</p>
 
             <h3>
-                Tools
+                Development Tools
             </h3>
 
             <p>
-                Git · GitHub · MySQL ·
-                PyCharm · Jupyter Notebook · Excel
+                Git · GitHub · MySQL · PyCharm · Jupyter Notebook
             </p>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
+
+            <p class="skill-number">04</p>
 
             <h3>
-                Interests
+                Areas of Interest
             </h3>
 
             <p>
-                Software Engineering ·
-                Data Science · AI ·
-                Intelligent Systems
+                Software Engineering · Data Science · AI · Intelligent Systems
             </p>
 
         </div>
@@ -538,80 +696,72 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 
 <section id="contact"
-         class="section contact-section">
+         class="contact-section">
 
-    <p class="section-label">
-        CONTACT
-    </p>
+    <div class="contact-container reveal">
 
+        <p class="section-label">
+            CONTACT
+        </p>
 
-    <h2 class="section-heading">
-        Let's connect.
-    </h2>
+        <h2>
+            Let's build something.
+        </h2>
 
+        <p>
 
-    <p class="section-description">
+            I'm interested in opportunities involving
+            software engineering, data science,
+            artificial intelligence, and applied technology.
 
-        I'm interested in opportunities involving
-        software engineering, data science,
-        artificial intelligence, and applied technology.
-
-    </p>
-
-
-    <div class="contact-links">
+        </p>
 
 
-        <!-- EMAIL -->
+        <div class="contact-buttons">
 
-        <a href="mailto:du.jinh@northeastern.edu">
-            Email
-        </a>
+            <a href="mailto:du.jinh@northeastern.edu"
+               class="button primary-button">
 
+                Email Me
 
-        <!-- LINKEDIN -->
+            </a>
 
-        <a href="https://www.linkedin.com/in/jinhao-du-219762352">
-            LinkedIn
-        </a>
+            <a href="https://www.linkedin.com/in/jinhao-du-219762352"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button secondary-button">
 
+                LinkedIn ↗
 
-        <!-- GITHUB -->
+            </a>
 
-        <a href="https://github.com/jinhaodu1203/hoop-havoc">
-            GitHub
-        </a>
+            <a href="https://github.com/jinhaodu1203"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button secondary-button">
 
+                GitHub ↗
 
-        <!-- DOWNLOAD RESUME -->
+            </a>
 
-        <a href="./resume.pdf"
-           download="Jinhao_Du_Resume.pdf">
-
-            Resume
-
-        </a>
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+</main>
+
 
 <footer>
 
     <p>
-
-        ©
-        <span id="year"></span>
-        David Jinhao Du
-
+        © <span id="year"></span> David Jinhao Du
     </p>
-
 
     <p>
         Built with HTML, CSS & JavaScript
@@ -622,7 +772,5 @@
 
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
