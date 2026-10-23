@@ -1,1227 +1,369 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="David Jinhao Du - Mathematics and Data Science student at Northeastern University.">
-
-    <title>David Jinhao Du | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jinhao Du | Data & Research Portfolio</title>
+<meta name="description" content="Jinhao Du — Mathematics and Data Science at Northeastern. Market research, data preparation, and independent programming.">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-
-<!-- ================= SCROLL PROGRESS ================= -->
-
-<div class="scroll-progress">
-    <div id="scrollBar"></div>
-</div>
-
-
-<!-- ================= NAVIGATION ================= -->
-
 <header>
-
-    <nav class="navbar">
-
-        <a href="#home"
-           class="logo">
-            DJH
-        </a>
-
-
-        <button
-            class="menu-button"
-            id="menuButton"
-            aria-label="Open menu">
-
-            Menu
-
-        </button>
-
-
-        <div class="nav-links"
-             id="navLinks">
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#experience">
-                Experience
-            </a>
-
-            <a href="#projects">
-                Projects
-            </a>
-
-            <a href="#skills">
-                Skills
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-
-            <a href="Resume.pdf"
-               download="Jinhao_Du_Resume.pdf"
-               class="resume-link">
-
-                Resume ↓
-
-            </a>
-
-        </div>
-
-    </nav>
-
+<a class="logo" href="#home">JD<span> / LAB</span>
+</a>
+<button id="menuButton" aria-expanded="false" aria-controls="navLinks">Menu</button>
+<nav id="navLinks">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+<a href="Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+</nav>
 </header>
-
-
 <main>
-
-
-<!-- ================= HERO ================= -->
-
-<section id="home"
-         class="hero">
-
-
-    <div class="hero-main">
-
-        <p class="hero-kicker hero-animate">
-
-            NORTHEASTERN UNIVERSITY
-
-            <span></span>
-
-            BOSTON, MA
-
-        </p>
-
-
-        <h1 class="hero-animate">
-
-            David
-            <br>
-
-            <span>
-                Jinhao Du
-            </span>
-
-        </h1>
-
-
-        <p class="hero-description hero-animate">
-
-            Mathematics and Data Science student
-            building software, working with data,
-            and exploring practical applications of AI.
-
-        </p>
-
-
-        <div class="hero-actions hero-animate">
-
-            <a href="#projects"
-               class="primary-button">
-
-                Explore my work
-
-                <span>
-                    ↓
-                </span>
-
-            </a>
-
-
-            <a href="mailto:du.jinh@northeastern.edu"
-               class="text-button">
-
-                Get in touch ↗
-
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <aside class="hero-side hero-animate">
-
-        <div class="hero-side-top">
-
-            <span class="availability-dot"></span>
-
-            <span>
-                Open to opportunities
-            </span>
-
-        </div>
-
-
-        <div class="hero-info">
-
-            <div>
-
-                <span class="info-label">
-                    Focus
-                </span>
-
-                <strong>
-                    Software / Data / AI
-                </strong>
-
-            </div>
-
-
-            <div>
-
-                <span class="info-label">
-                    Programming
-                </span>
-
-                <strong>
-                    Python / C++ / SQL
-                </strong>
-
-            </div>
-
-
-            <div>
-
-                <span class="info-label">
-                    Currently
-                </span>
-
-                <strong>
-                    Northeastern University
-                </strong>
-
-            </div>
-
-        </div>
-
-    </aside>
-
-
-    <div class="hero-index">
-
-        <span>
-            PORTFOLIO
-        </span>
-
-        <span>
-            2026
-        </span>
-
-    </div>
-
+<section id="home" class="hero">
+<div class="hero-copy">
+<p class="eyebrow">
+<span class="status">
+</span> OPEN TO SPRING 2027 CO-OP</p>
+<h1>JINHAO<br>
+<span>DU<span class="period">.</span>
+</span>
+</h1>
+<p class="hero-description">Finding the signal.<br>Building the story.</p>
+<p class="muted">Mathematics & Data Science · Northeastern University</p>
+<a class="button" href="#experience">Explore my work <span>↗</span>
+</a>
+</div>
+<div class="orb" aria-hidden="true">
+<div class="ring r1">
+</div>
+<div class="ring r2">
+</div>
+<div class="ring r3">
+</div>
+<div class="core">
+</div>
+<span class="orb-label">RESEARCH / DATA / CODE</span>
+<span class="coordinate">42.3601° N · BOSTON</span>
+</div>
+<div class="hero-bottom">
+<span>PORTFOLIO — 2026</span>
+<span>SCROLL TO EXPLORE ↓</span>
+<span>DATA → CONTEXT → INSIGHT</span>
+</div>
 </section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about"
-         class="section about-section">
-
-
-    <div class="section-header reveal">
-
-        <span class="section-number">
-            01
-        </span>
-
-        <p class="section-title">
-            About
-        </p>
-
-    </div>
-
-
-    <div class="about-profile">
-
-
-        <!-- PHOTO -->
-
-        <div class="profile-column reveal">
-
-            <div class="profile-image-wrapper">
-
-                <img
-                    src="images/profile.jpg"
-                    alt="David Jinhao Du"
-                    class="profile-image">
-
-            </div>
-
-
-            <div class="photo-caption">
-
-                <span>
-                    DAVID JINHAO DU
-                </span>
-
-                <span>
-                    BOSTON / 2026
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- BIO -->
-
-        <div class="about-content">
-
-
-            <p class="about-intro reveal">
-
-                I'm David — a Mathematics and Data Science
-                student at Northeastern University.
-
-            </p>
-
-
-            <h2 class="large-statement reveal">
-
-                I like combining
-
-                <span>
-                    Analytical Thinking
-                </span>
-
-                with things that actually work.
-
-            </h2>
-
-
-            <div class="about-copy reveal">
-
-                <p>
-
-                    I'm interested in software engineering,
-                    data science, artificial intelligence,
-                    and intelligent systems.
-
-                </p>
-
-
-                <p>
-
-                    What I enjoy most is learning by building.
-                    I like taking an idea, understanding how
-                    it works, and turning it into something practical.
-
-                </p>
-
-
-                <p>
-
-                    My projects range from developing
-                    HOOP HAVOC, a basketball game built
-                    with Python and Pygame, to analyzing
-                    real-world datasets and working with
-                    relational databases.
-
-                </p>
-
-
-                <p>
-
-                    Outside the classroom, I have worked
-                    in real estate market research and explored
-                    how AI tools can improve research,
-                    data organization, content workflows,
-                    and business processes.
-
-                </p>
-
-            </div>
-
-
-            <div class="personal-details reveal">
-
-                <div>
-
-                    <span>
-                        Based in
-                    </span>
-
-                    <strong>
-                        Boston, Massachusetts
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        Studying
-                    </span>
-
-                    <strong>
-                        Mathematics + Data Science
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        Interested in
-                    </span>
-
-                    <strong>
-                        Software / Data / AI
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        Languages
-                    </span>
-
-                    <strong>
-                        English / Mandarin Chinese
-                    </strong>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<section id="about" class="section about">
+<div class="portrait">
+<img src="images/profile.jpg" alt="Jinhao Du">
+<span class="photo-label">JINHAO DU / BOSTON, MA</span>
+</div>
+<div>
+<p class="eyebrow">01 / ABOUT ME</p>
+<h2>Curiosity,<br>with <em>structure.</em>
+</h2>
+<p class="lead">I turn scattered information into reliable datasets and clear research.</p>
+<p>I’m a Mathematics and Data Science undergraduate at Northeastern University. Two internships at CRIC connected my analytical training with real business questions: understanding residential markets, organizing project information, and preparing research materials.</p>
+<p>Outside work, I explore sports data and build software through independent learning and hands-on debugging.</p>
+<div class="inline-links">
+<a href="https://www.linkedin.com/in/jinhao-du-219762352">LinkedIn ↗</a>
+<a href="https://github.com/jinhaodu1203">GitHub ↗</a>
+<a href="mailto:du.jinh@northeastern.edu">Email ↗</a>
+</div>
+<div class="education">NORTHEASTERN UNIVERSITY<br>
+<span>BS Mathematics & Data Science · May 2028<br>GPA 3.79 / 4.0 · Dean’s List, Fall 2025</span>
+</div>
+</div>
 </section>
-
-
-<!-- ================= EDUCATION ================= -->
-
-<section class="education-strip reveal">
-
-    <div class="education-inner">
-
-        <div>
-
-            <span class="small-label">
-                EDUCATION
-            </span>
-
-            <h3>
-                Northeastern University
-            </h3>
-
-            <p>
-                B.S. Mathematics and Data Science
-            </p>
-
-        </div>
-
-
-        <div class="education-stat">
-
-            <span>
-                GPA
-            </span>
-
-            <strong>
-                3.79 / 4.0
-            </strong>
-
-        </div>
-
-
-        <div class="education-stat">
-
-            <span>
-                Graduation
-            </span>
-
-            <strong>
-                May 2028
-            </strong>
-
-        </div>
-
-
-        <div class="education-stat">
-
-            <span>
-                Recognition
-            </span>
-
-            <strong>
-                Dean's List
-            </strong>
-
-        </div>
-
-    </div>
-
+<section class="section capabilities">
+<p class="eyebrow">02 / CAPABILITIES</p>
+<h2>From questions<br>to <em>usable information.</em>
+</h2>
+<div class="cap-grid">
+<article>
+<span>01</span>
+<h3>Market research</h3>
+<p>Field observations, competitor comparisons, and research briefs grounded in business context.</p>
+</article>
+<article>
+<span>02</span>
+<h3>Data preparation</h3>
+<p>Collecting, cleaning, standardizing, and organizing data for consistent comparison.</p>
+</article>
+<article>
+<span>03</span>
+<h3>Analysis</h3>
+<p>Exploratory analysis and statistical coursework, with attention to assumptions and limitations.</p>
+</article>
+<article>
+<span>04</span>
+<h3>Programming</h3>
+<p>Python, SQL, and independent software projects built with Git and careful debugging.</p>
+</article>
+</div>
 </section>
-
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section id="experience"
-         class="section">
-
-
-    <div class="section-header reveal">
-
-        <span class="section-number">
-            02
-        </span>
-
-        <p class="section-title">
-            Experience
-        </p>
-
-    </div>
-
-
-    <div class="experience-list">
-
-
-        <!-- 2026 -->
-
-        <article class="experience-row reveal">
-
-            <div class="experience-date">
-
-                Jun 2026
-                <br>
-                —
-                <br>
-                Aug 2026
-
-            </div>
-
-
-            <div class="experience-heading">
-
-                <span>
-                    Shanghai CRIC Information Technology Co., Ltd. - Wuxi Branch
-                </span>
-
-                <h3>
-
-                    Real Estate Market Research
-                    & AI Applications Intern
-
-                </h3>
-
-                <p>
-                    Wuxi, China
-                </p>
-
-            </div>
-
-
-            <div class="experience-copy">
-
-                <p>
-
-                    Invited back after strong 2025 performance; conducted site and sales-office research on Wuxi residential projects, collecting pricing, sell-through, positioning, channel, and marketing data.
-
-                </p>
-
-
-                <p>
-
-                    Maintained project datasets and weekly market-tracking tables; compared competitors and identified pricing and absorption trends for property evaluations and market reports.
-
-                </p>
-
-
-                <p>
-
-                    Applied Cowork enterprise AI tools to organize research, draft content, and streamline recurring reporting workflows for digital market-analysis deliverables.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <!-- 2025 -->
-
-        <article class="experience-row reveal">
-
-            <div class="experience-date">
-
-                May 2025
-                <br>
-                —
-                <br>
-                Aug 2025
-
-            </div>
-
-
-            <div class="experience-heading">
-
-                <span>
-                    Shanghai CRIC Information Technology Co., Ltd. - Wuxi Branch
-                </span>
-
-                <h3>
-                    Real Estate Market Research Intern
-                </h3>
-
-                <p>
-                    Wuxi, China
-                </p>
-
-            </div>
-
-
-            <div class="experience-copy">
-
-                <p>
-
-                    Researched Wuxi residential developments through sales-center visits and desk research, recording pricing, unit mix, positioning, promotional tactics, and sales-progress observations in structured tracking sheets.
-
-                </p>
-
-
-                <p>
-
-                    Updated internal project databases and standardized property information to support side-by-side comparisons of competing developments and recurring market tracking.</p>
-                <p>Assisted with competitor benchmarking and market briefs by summarizing pricing, product differentiation, channel activity, and field observations into clear research materials for the analyst team.
-
-                </p>
-
-            </div>
-
-        </article>
-
-    </div>
-
+<section id="experience" class="section">
+<div class="section-head">
+<div>
+<p class="eyebrow">03 / INTERNSHIP WORK</p>
+<h2>Research in<br>the <em>real world.</em>
+</h2>
+</div>
+<p>Selected contributions at Shanghai CRIC Information Technology Co., Ltd. — Wuxi Branch.</p>
+</div>
+<div class="timeline">
+<div>
+<span>JUN — AUG 2026</span>
+<h3>Market Research &<br>AI Applications Intern</h3>
+<p>Invited back after my 2025 internship.</p>
+</div>
+<div>
+<span>MAY — AUG 2025</span>
+<h3>Market Research<br>Intern</h3>
+<p>Residential project research and market tracking.</p>
+</div>
+</div>
+<article class="case">
+<div class="visual database">
+<div class="panel-label">
+<span>DATA OPERATIONS</span>
+<span>CRIC / WUXI</span>
+</div>
+<h3>Organize.<br>Standardize.<br>
+<em>Compare.</em>
+</h3>
+<div class="schema">
+<span>CITY</span>
+<span>PROJECT</span>
+<span>DEVELOPER</span>
+<span>OPERATOR</span>
+</div>
+<div class="rows" aria-hidden="true">
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+</div>
+<div class="pipeline">
+<span>RESEARCH</span>
+<b>→</b>
+<span>STRUCTURE</span>
+<b>→</b>
+<span>REFERENCE</span>
+</div>
+<small>Process illustration · no internal records displayed</small>
+</div>
+<div class="case-copy">
+<p class="eyebrow">CASE 01 / STRUCTURED DATA</p>
+<h3>Making project data<br>
+<em>easier to use.</em>
+</h3>
+<p>Market information needs consistent fields and categories before competing developments can be compared.</p>
+<dl>
+<dt>My contribution</dt>
+<dd>Maintained project datasets and weekly tracking tables. Standardized property information and organized developer and operator references.</dd>
+<dt>Deliverables</dt>
+<dd>Updated project tables and structured reference sheets supporting recurring market research and side-by-side comparisons.</dd>
+<dt>Business relevance</dt>
+<dd>A consistent reference for the analyst team’s project reviews and market-tracking work.</dd>
+</dl>
+<div class="tags">
+<span>Data cleaning</span>
+<span>Excel</span>
+<span>Data organization</span>
+</div>
+</div>
+</article>
+<article class="case reverse">
+<div class="visual research">
+<div class="panel-label">
+<span>MARKET INTELLIGENCE</span>
+<span>FIELD → DESK</span>
+</div>
+<div class="city" aria-hidden="true">
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+</div>
+<h3>Context behind<br>
+<em>the numbers.</em>
+</h3>
+<div class="research-topics">
+<span>PRICING</span>
+<span>POSITIONING</span>
+<span>SALES ACTIVITY</span>
+</div>
+<small>Illustration of research themes</small>
+</div>
+<div class="case-copy">
+<p class="eyebrow">CASE 02 / MARKET RESEARCH</p>
+<h3>From field observations<br>to <em>research materials.</em>
+</h3>
+<p>Pricing is only part of the story. Product positioning, promotional activity, and sales progress provide the context.</p>
+<dl>
+<dt>My contribution</dt>
+<dd>Conducted sales-center visits and desk research, gathered project information, compared competitors, and summarized observations.</dd>
+<dt>Deliverables</dt>
+<dd>Market briefs, competitor comparisons, and weekly tracking materials for the analyst team.</dd>
+<dt>AI-supported reporting</dt>
+<dd>Used Cowork enterprise AI tools to organize research, draft content, and support recurring reporting workflows.</dd>
+</dl>
+<div class="tags">
+<span>Field research</span>
+<span>Benchmarking</span>
+<span>Reporting</span>
+</div>
+</div>
+</article>
 </section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects"
-         class="projects-section">
-
-
-    <div class="projects-inner">
-
-
-        <div class="section-header light reveal">
-
-            <span class="section-number">
-                03
-            </span>
-
-            <p class="section-title">
-                Selected Work
-            </p>
-
-        </div>
-
-
-        <!-- ================= HOOP HAVOC ================= -->
-
-        <article class="featured-project reveal">
-
-
-            <div class="featured-meta">
-
-                <span>
-                    FEATURED / 01
-                </span>
-
-                <span>
-                    2026
-                </span>
-
-            </div>
-
-
-            <div class="featured-grid">
-
-
-                <div class="project-title-area">
-
-                    <p>
-                        Python / Pygame / Git
-                    </p>
-
-
-                    <h2>
-
-                        HOOP
-                        <br>
-                        HAVOC
-
-                    </h2>
-
-                </div>
-
-
-                <div class="project-description">
-
-                    <p class="project-lead">
-
-                        A basketball game built from
-                        the ground up using Python
-                        and Pygame.
-
-                    </p>
-
-
-                    <p>
-
-                        Features two-player gameplay, character selection, AI opponents, collision detection, ball physics, scoring systems, and training modes. Managed version control and releases with Git/GitHub and packaged a Windows build with PyInstaller for distribution.
-
-                    </p>
-
-
-                    <a
-                        href="https://github.com/jinhaodu1203/hoop-havoc"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View repository ↗
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- ================= GAMEPLAY DEMO ================= -->
-
-            <div class="gameplay-demo reveal">
-
-
-                <div class="gameplay-header">
-
-                    <div>
-
-                        <span class="gameplay-label">
-                            GAMEPLAY DEMO
-                        </span>
-
-                        <h3>
-                            See HOOP HAVOC in action.
-                        </h3>
-
-                    </div>
-
-
-                    <span class="gameplay-duration">
-                        LIVE BUILD / 2026
-                    </span>
-
-                </div>
-
-
-                <div class="video-frame">
-
-                    <video
-                        class="gameplay-video"
-                        controls
-                        playsinline
-                        preload="metadata">
-
-                        <source
-                            src="videos/hoop-havoc-demo.MP4"
-                            type="video/mp4">
-
-                        Your browser does not support HTML5 video.
-
-                    </video>
-
-                </div>
-
-
-                <div class="video-caption">
-
-                    <span>
-                        CHARACTER SELECTION
-                    </span>
-
-                    <span>
-                        GAMEPLAY
-                    </span>
-
-                    <span>
-                        AI OPPONENTS
-                    </span>
-
-                    <span>
-                        BALL PHYSICS
-                    </span>
-
-                    <span>
-                        TRAINING MODE
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="tech-line">
-
-                <span>PYTHON</span>
-                <span>PYGAME</span>
-                <span>GAME LOGIC</span>
-                <span>AI OPPONENTS</span>
-                <span>PHYSICS</span>
-                <span>GIT</span>
-
-            </div>
-
-        </article>
-
-
-        <!-- ================= OTHER PROJECTS ================= -->
-
-        <div class="other-projects">
-
-
-            <!-- DATA SCIENCE -->
-
-            <article class="project-card reveal">
-
-                <div class="project-card-top">
-
-                    <span>
-                        02
-                    </span>
-
-                    <span>
-                        DATA SCIENCE
-                    </span>
-
-                </div>
-
-
-                <h3>
-
-                    Sleep & Stress
-                    Data Analysis
-
-                </h3>
-
-
-                <p>
-
-                    Collaborated on a four-person team at Northeastern University in Spring 2026 to analyze sleep, stress, and behavioral variables using Python. Cleaned and explored the dataset, applied linear regression, logistic regression, and K-means clustering (k=3), and presented methodology, model performance, limitations, and findings.
-
-                </p>
-
-
-                <div class="project-tools">
-
-                    Python
-                    <span>/</span>
-                    Pandas
-                    <span>/</span>
-                    Regression
-                    <span>/</span>
-                    K-Means
-
-                </div>
-
-            </article>
-
-
-            <article class="project-card reveal">
-                <div class="project-card-top"><span>03</span><span>WEB DEVELOPMENT</span></div>
-                <h3>Personal Portfolio Website</h3>
-                <p>Built and customized a responsive personal portfolio website using HTML, CSS, and JavaScript to present education, experience, technical skills, and selected projects. Integrated resume download and direct links to GitHub, LinkedIn, and email; used Git/GitHub and GitHub Pages for version control and web publishing.</p>
-                <div class="project-tools">HTML <span>/</span> CSS <span>/</span> JavaScript <span>/</span> GitHub Pages</div>
-            </article>
-
-            <!-- DATABASE -->
-
-            <article class="project-card reveal">
-
-                <div class="project-card-top">
-
-                    <span>
-                        04
-                    </span>
-
-                    <span>
-                        DATABASE
-                    </span>
-
-                </div>
-
-
-                <h3>
-
-                    Database
-                    Development
-
-                </h3>
-
-
-                <p>
-
-                    Working with relational models,
-                    SQL queries, schemas,
-                    data organization, and MySQL.
-
-                </p>
-
-
-                <div class="project-tools">
-
-                    SQL
-                    <span>/</span>
-                    MySQL
-                    <span>/</span>
-                    Schema Design
-
-                </div>
-
-            </article>
-
-
-            <!-- C++ -->
-
-            <article class="project-card reveal">
-
-                <div class="project-card-top">
-
-                    <span>
-                        05
-                    </span>
-
-                    <span>
-                        SOFTWARE
-                    </span>
-
-                </div>
-
-
-                <h3>
-
-                    C++
-                    Programming
-
-                </h3>
-
-
-                <p>
-
-                    Building C++ programming experience
-                    through projects involving program design,
-                    debugging, control flow,
-                    and problem solving.
-
-                </p>
-
-
-                <div class="project-tools">
-
-                    C++
-                    <span>/</span>
-                    Git
-                    <span>/</span>
-                    Problem Solving
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
+<section id="projects" class="section projects">
+<p class="eyebrow">04 / SELECTED PROJECTS</p>
+<h2>Ideas, put<br>
+<em>into practice.</em>
+</h2>
+<p class="section-intro">Academic collaboration and independent building. My contribution, clearly defined.</p>
+<article class="case">
+<div class="visual nba">
+<div class="panel-label">
+<span>NBA DATA</span>
+<span>2022 — 2025 SEASONS</span>
+</div>
+<div class="court" aria-hidden="true">
+<i>
+</i>
+<b>
+</b>
+</div>
+<div class="visual-bottom">
+<span>STANDINGS + STATS + SALARY</span>
+<small>Data preparation, before the dashboard.</small>
+</div>
+</div>
+<div class="case-copy">
+<p class="eyebrow">TEAM PROJECT / JUNE 2026</p>
+<h3>NBA Data<br>
+<em>Preparation</em>
+</h3>
+<p class="lead">My role: data collection & cleaning.</p>
+<p>Collected and cleaned NBA data for a team dashboard project. The team pipeline brings together standings, team statistics, and salary data using team and season references.</p>
+<p class="outcome">
+<strong>Output</strong>Prepared data inputs for the team’s analysis and dashboard. The dashboard itself was a team deliverable; my contribution focused on its underlying data.</p>
+<div class="tags">
+<span>Data collection</span>
+<span>Cleaning</span>
+<span>Sports analytics</span>
+</div>
+</div>
+</article>
+<article class="case reverse">
+<div class="visual sleep">
+<div class="panel-label">
+<span>BEHAVIORAL DATA</span>
+<span>ACADEMIC RESEARCH</span>
+</div>
+<div class="sleep-orbit" aria-hidden="true">
+<span>SLEEP<br>
+<em>& STRESS</em>
+</span>
+</div>
+<div class="visual-bottom">
+<span>EXPLORE → MODEL → INTERPRET</span>
+<small>A four-person team project</small>
+</div>
+</div>
+<div class="case-copy">
+<p class="eyebrow">TEAM PROJECT / DECEMBER 2025</p>
+<h3>Sleep & Stress<br>
+<em>Data Analysis</em>
+</h3>
+<p>Collaborated in a four-person team exploring sleep, stress, and behavioral variables using Python.</p>
+<p>The team cleaned and explored the data, applied linear and logistic regression and K-means clustering, and discussed model performance and limitations.</p>
+<p class="outcome">
+<strong>Output</strong>A team presentation connecting methodology, findings, and limitations. Analytical methods are described at the team level.</p>
+<div class="tags">
+<span>Python</span>
+<span>EDA</span>
+<span>Statistical analysis</span>
+</div>
+</div>
+</article>
+<article class="case">
+<div class="visual game">
+<div class="panel-label">
+<span>HOOP HAVOC</span>
+<span>INDEPENDENT BUILD</span>
+</div>
+<video controls playsinline preload="metadata" aria-label="HOOP HAVOC game demo">
+<source src="videos/hoop-havoc-demo.MP4" type="video/mp4">Your browser does not support video. <a href="videos/hoop-havoc-demo.MP4">Watch the demo</a>.</video>
+<div class="visual-bottom">
+<span>LEARN → BUILD → DEBUG → RELEASE</span>
+</div>
+</div>
+<div class="case-copy">
+<p class="eyebrow">INDEPENDENT PROJECT / AUGUST 2026</p>
+<h3>HOOP<br>
+<em>HAVOC</em>
+</h3>
+<p>Built a Python/Pygame basketball game with character selection, computer-controlled opponents, ball physics, scoring, and training modes.</p>
+<p>Learned independently and worked through bugs by examining the code line by line and correcting the underlying problems.</p>
+<p class="outcome">
+<strong>Output</strong>A playable game, version-controlled source, and a Windows build packaged with PyInstaller.</p>
+<a class="text-link" href="https://github.com/jinhaodu1203/hoop-havoc">Explore the source ↗</a>
+<div class="tags">
+<span>Python / Pygame</span>
+<span>Git / GitHub</span>
+<span>Debugging</span>
+</div>
+</div>
+</article>
 </section>
-
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills"
-         class="section">
-
-
-    <div class="section-header reveal">
-
-        <span class="section-number">
-            04
-        </span>
-
-        <p class="section-title">
-            Toolkit
-        </p>
-
-    </div>
-
-
-    <div class="skills-list">
-
-
-        <div class="skill-row reveal">
-
-            <span>
-                Programming
-            </span>
-
-            <p>
-                Python, C++, SQL, HTML, CSS, JavaScript
-            </p>
-
-        </div>
-
-
-        <div class="skill-row reveal">
-
-            <span>
-                Data
-            </span>
-
-            <p>
-                Pandas, NumPy, EDA,
-                Regression, Clustering
-            </p>
-
-        </div>
-
-
-        <div class="skill-row reveal">
-
-            <span>
-                Development
-            </span>
-
-            <p>
-                Microsoft Excel, Git, GitHub, MySQL,
-                PyCharm, VSCode, Jupyter Notebook
-            </p>
-
-        </div>
-
-
-        <div class="skill-row reveal">
-
-            <span>
-                Interests
-            </span>
-
-            <p>
-                Software Engineering,
-                Data Science,
-                Artificial Intelligence,
-                Intelligent Systems
-            </p>
-
-        </div>
-
-    </div>
-
+<section class="section toolkit">
+<p class="eyebrow">05 / TOOLKIT</p>
+<div class="toolkit-grid">
+<h2>Always<br>
+<em>learning.</em>
+</h2>
+<div>
+<p>
+<span>DATA & ANALYSIS</span>Python · pandas · NumPy · SQL · Excel · Jupyter</p>
+<p>
+<span>BUILDING & COLLABORATION</span>Git · GitHub · HTML · CSS · JavaScript · C++ fundamentals</p>
+<p>
+<span>INTERESTS</span>Data analytics · Research · Data quality · Business & operations analytics</p>
+</div>
+</div>
 </section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact"
-         class="contact-section">
-
-
-    <div class="contact-inner">
-
-
-        <div class="contact-heading reveal">
-
-            <p class="contact-number">
-                05 / CONTACT
-            </p>
-
-
-            <h2>
-
-                Let's build
-                <br>
-                something useful.
-
-            </h2>
-
-
-            <p class="contact-intro">
-
-                I'm always open to conversations about
-                software, data, AI, internships,
-                and new opportunities.
-
-            </p>
-
-        </div>
-
-
-        <div class="contact-grid reveal">
-
-
-            <!-- SCHOOL EMAIL -->
-
-            <a
-                href="mailto:du.jinh@northeastern.edu"
-                class="contact-item">
-
-                <span class="contact-item-label">
-                    SCHOOL EMAIL
-                </span>
-
-                <strong>
-                    du.jinh@northeastern.edu
-                </strong>
-
-                <span class="contact-arrow">
-                    ↗
-                </span>
-
-            </a>
-
-
-            <!-- PERSONAL EMAIL -->
-
-            <a
-                href="mailto:jinhaodu1203@gmail.com"
-                class="contact-item">
-
-                <span class="contact-item-label">
-                    PERSONAL EMAIL
-                </span>
-
-                <strong>
-                    jinhaodu1203@gmail.com
-                </strong>
-
-                <span class="contact-arrow">
-                    ↗
-                </span>
-
-            </a>
-
-
-            <!-- LINKEDIN -->
-
-            <a
-                href="https://www.linkedin.com/in/jinhao-du-219762352"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-item">
-
-                <span class="contact-item-label">
-                    LINKEDIN
-                </span>
-
-                <strong>
-                    Connect with me
-                </strong>
-
-                <span class="contact-arrow">
-                    ↗
-                </span>
-
-            </a>
-
-
-            <!-- GITHUB -->
-
-            <a
-                href="https://github.com/jinhaodu1203"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-item">
-
-                <span class="contact-item-label">
-                    GITHUB
-                </span>
-
-                <strong>
-                    View my code
-                </strong>
-
-                <span class="contact-arrow">
-                    ↗
-                </span>
-
-            </a>
-
-        </div>
-
-
-        <div class="contact-resume reveal">
-
-            <span>
-                Looking for the short version?
-            </span>
-
-
-            <a
-                href="Resume.pdf"
-                download="Jinhao_Du_Resume.pdf">
-
-                Download Resume ↓
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
+<section id="contact" class="section contact">
+<p class="eyebrow">
+<span class="status">
+</span> LET’S CONNECT</p>
+<h2>Good questions.<br>
+<em>Thoughtful work.</em>
+</h2>
+<p>Seeking a January–June 2027 co-op.<br>Based in Boston. Open to opportunities beyond it.</p>
+<a class="button" href="mailto:du.jinh@northeastern.edu">Work with me ↗</a>
+<a class="email" href="mailto:du.jinh@northeastern.edu">du.jinh@northeastern.edu</a>
 <footer>
-
-    <span>
-
-        ©
-        <span id="year"></span>
-        David Jinhao Du
-
-    </span>
-
-
-    <span>
-        Designed & built by DJH
-    </span>
-
-
-    <a href="#home">
-        Back to top ↑
-    </a>
-
+<span>© <span id="year">2026</span> Jinhao Du</span>
+<a href="https://github.com/jinhaodu1203">GitHub ↗</a>
+<a href="#home">Back to top ↑</a>
 </footer>
-
-
-<script src="script.js"></script>
-
+</section>
+</main>
+<script src="script.js">
+</script>
 </body>
 </html>
