@@ -102,3 +102,45 @@ openDemo.addEventListener('click', () => {
 document.getElementById('closeDemo').addEventListener('click', closeDemo);
 dialog.addEventListener('click', event => { if (event.target === dialog) { const box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closeDemo(); } });
 dialog.addEventListener('close', () => { modalVideo.pause(); document.body.style.overflow = ''; openDemo.focus(); });
+
+// Scroll-linked chapter sequence: read layout first, then update CSS variables.
+const chapters = [...document.querySelectorAll('main > section[id]')];
+const chapterLinks = [...document.querySelectorAll('.chapter-rail a')];
+const scrollSections = [...document.querySelectorAll('main > .section')];
+const scrollCases = [...document.querySelectorAll('.case')];
+const scrollHeadings = [...document.querySelectorAll('.section h2')];
+hero.classList.add('scroll-hero');
+scrollSections.forEach(section => section.classList.add('scroll-section'));
+scrollCases.forEach(section => section.classList.add('scroll-case'));
+scrollHeadings.forEach(heading => heading.classList.add('scroll-heading'));
+const clamp = value => Math.max(0, Math.min(1, value));
+let scrollFrame = 0;
+function paintScrollSequence() {
+  scrollFrame = 0;
+  const vh = innerHeight;
+  const chapterBounds = chapters.map(element => ({ element, box: element.getBoundingClientRect() }));
+  const sectionBounds = scrollSections.map(element => ({ element, box: element.getBoundingClientRect() }));
+  const caseBounds = scrollCases.map(element => ({ element, box: element.getBoundingClientRect() }));
+  const headingBounds = scrollHeadings.map(element => ({ element, box: element.getBoundingClientRect() }));
+  let active = chapters[0].id;
+  chapterBounds.forEach(({ element, box }) => { if (box.top < vh * .48) active = element.id; });
+  chapterLinks.forEach(link => {
+    if (link.getAttribute('href') === '#' + active) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+  if (paused) return;
+  hero.style.setProperty('--hero-scroll', clamp(-chapterBounds[0].box.top / chapterBounds[0].box.height));
+  sectionBounds.forEach(({ element, box }) => element.style.setProperty('--section-progress', clamp((vh - box.top) / (vh * .7))));
+  caseBounds.forEach(({ element, box }) => {
+    if (box.bottom < -100 || box.top > vh + 100) return;
+    element.style.setProperty('--case-progress', clamp((vh - box.top) / (vh + box.height)));
+    element.style.setProperty('--case-enter', clamp((vh * .96 - box.top) / (vh * .55)));
+  });
+  headingBounds.forEach(({ element, box }) => element.style.setProperty('--heading-progress', clamp((vh * .95 - box.top) / (vh * .4))));
+}
+function requestScrollPaint() { if (!scrollFrame) scrollFrame = requestAnimationFrame(paintScrollSequence); }
+window.addEventListener('scroll', requestScrollPaint, { passive: true });
+window.addEventListener('resize', requestScrollPaint);
+motionToggle.addEventListener('click', requestScrollPaint);
+motionPreference.addEventListener('change', requestScrollPaint);
+requestScrollPaint();
